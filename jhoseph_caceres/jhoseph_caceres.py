@@ -17,10 +17,11 @@ def index() -> rx.Component:
         rx.color_mode.button(position="top-right"),
         rx.vstack(
             rx.heading("JHOSEPH CACERES ARAMAYO", size="9"),
-            
+            rx.image(src="jose.jpg", class_name="w-[400px]"),
             rx.text(
                 "My passion for technology drives me to constantly explore new solutions and stay up to date with the latest advances. I excel at problem solving and find satisfaction in finding innovative solutions. My focus on continuous learning allows me to adapt quickly to changes and constantly improve my skills. I am committed to contributing to the field of computing with creativity and dedication.",
-                size="5",
+                
+                class_name="text-2xl text-blue-600"
             ),
             rx.link(
                 rx.button("Facebook"),
@@ -31,12 +32,14 @@ def index() -> rx.Component:
                 rx.button("Instagram"),
                 href="https://www.instagram.com/jhoseph_caceres19/",
                 is_external=True,
+                class_name="bg-blue-600"
             ),
             rx.link(
                 rx.button("Linkedin"),
                 href="https://www.linkedin.com/in/jos%C3%A9-caceres-aramayo-9b7548268/",
                 is_external=True,
             ),
+            
             spacing="5",
             justify="center",
             min_height="85vh",
